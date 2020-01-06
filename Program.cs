@@ -19,6 +19,7 @@ namespace QuadaxProgrammingExerciseChadAllen
             builder.Append(rnd.Next(1, 7));
             answer = Int32.Parse(builder.ToString());
 
+
             // User inputs a number until they guess the correct answer
             while (count > 0)
             {
@@ -32,8 +33,7 @@ namespace QuadaxProgrammingExerciseChadAllen
                 }
                 Console.WriteLine("Please enter a 4 digit number");
             }
-         
-
+    
             return 0;
         }
     }
