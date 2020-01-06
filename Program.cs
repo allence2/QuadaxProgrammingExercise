@@ -91,6 +91,11 @@ namespace QuadaxProgrammingExerciseChadAllen
                     Console.WriteLine("Please enter a 4 digit number");
                 }
             }
+            // Loss message if user did not guess the correct answer in 10 attempts
+            if (count == 0)
+            {
+                Console.WriteLine("Failure!! The correct answer was " + answer);
+            }
     
             return 0;
         }
