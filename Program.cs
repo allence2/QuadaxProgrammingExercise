@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Text;
 
+/**
+ * Author: Chad Allen
+ */
 namespace QuadaxProgrammingExerciseChadAllen
 {
     class Program
@@ -24,7 +27,7 @@ namespace QuadaxProgrammingExerciseChadAllen
         /**
          * Creates a string based on how closely correct the user input is to the answer
          */
-        public static string compareDigitArrays(int[] correct, int[] user)
+        private static string compareDigitArrays(int[] correct, int[] user)
         {
             StringBuilder correction = new StringBuilder();
             for (int i = 0; i < user.Length; i++)
@@ -65,7 +68,7 @@ namespace QuadaxProgrammingExerciseChadAllen
             // Calls function to put the correct answer into an array
             int[] correctDigits = numberToArray(answer);
 
-            // User inputs a number until they guess the correct answer
+            // User inputs a number until they guess the correct answer or have 10 attempts
             while (count > 0)
             {
                 Console.WriteLine("Enter a 4 digit number with digits being 1-6: (Tries left = " + count + ")");
@@ -95,8 +98,7 @@ namespace QuadaxProgrammingExerciseChadAllen
             if (count == 0)
             {
                 Console.WriteLine("Failure!! The correct answer was " + answer);
-            }
-    
+            }  
             return 0;
         }
     }
